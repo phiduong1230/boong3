@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "249254095881",
+    "project_id": "boong3-ada2d",
+    "storage_bucket": "boong3-ada2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:249254095881:android:0fc62ea7aaba165d8c5cd8",
+        "android_client_info": {
+          "package_name": "com.example.boong3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "249254095881-v5vugail5ji7qpm7m52raqbtsiu03pd4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtw6NVGjlF_tLex8nKvqtElvD2OspaZ6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "249254095881-v5vugail5ji7qpm7m52raqbtsiu03pd4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "249254095881-9sckeb754d3o34adisi2hor27orsbl18.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.boong3"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
