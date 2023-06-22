@@ -1,5 +1,5 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
-import 'package:boong3/screens/home_screen.dart';
+import 'package:boong3/screens/home.dart';
 import 'package:boong3/services/auth.dart';
 import 'package:boong3/utils/color.dart';
 import 'package:boong3/utils/route.dart';
@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/services.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'screens/signin_screen.dart';
+import 'screens/signin.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

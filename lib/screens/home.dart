@@ -1,6 +1,6 @@
-import 'package:boong3/services/auth.dart';
 import 'package:boong3/services/local.dart';
 import 'package:boong3/utils/color.dart';
+import 'package:boong3/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -18,11 +18,13 @@ class _HomeScreenState extends State<HomeScreen> {
     username = await SharedPreferencesHelper().getUserName();
     displayName = await SharedPreferencesHelper().getDisplayName();
     profilePic = await SharedPreferencesHelper().getUserProfileUrl();
+    email = await SharedPreferencesHelper().getUserEmail();
   }
 
   onLoad() async {
     await getCurrentUserData();
     print('got user data');
+    print(displayName + " " + username);
     setState(() {});
   }
 
@@ -36,40 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: true,
-      drawer: Drawer(
-        child: Container(
-          color: mainColor,
-          child: ListView(
-            children: [
-              Center(
-                child: Image.asset(
-                  'asset/images/icon_trans.png',
-                  height: MediaQuery.of(context).size.height / 10,
-                ),
-              ),
-              const Center(
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.home,
-                      color: subColor,
-                    ),
-                    Text(
-                      "Homepage",
-                      style: TextStyle(
-                        color: subColor,
-                        fontFamily: "Bellota",
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    )
-                  ],
-                ),
-              )
-            ],
-          ),
-        ),
-      ),
+      drawer: NavBar(username: username, email: email, profilePic: profilePic, displayName: displayName,),
       body: const CustomScrollView(
         slivers: [
           SliverAppBar(

@@ -1,6 +1,6 @@
 import 'package:boong3/main.dart';
-import 'package:boong3/screens/home_screen.dart';
-import 'package:boong3/screens/signin_screen.dart';
+import 'package:boong3/screens/home.dart';
+import 'package:boong3/screens/signin.dart';
 import 'package:flutter/material.dart';
 
 class RouteGenerator {
